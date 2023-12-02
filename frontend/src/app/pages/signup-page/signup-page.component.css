@@ -15,7 +15,7 @@
   .sign-up .overlap {
     position: relative;
     height: 1433px;
-    background-image: url(./images/Background.png);
+    background-image: url(/assets/Background.png);
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -204,7 +204,7 @@
     height: 617px;
     top: 289px;
     left: 1003px;
-    background-image: url(./images/173f07b0-c534-4bcc-953a-df2d6f1d308e1.png);
+    background-image: url(/assets/login-signup-image.png);
     background-size: cover;
     background-position: 50% 50%;
   }

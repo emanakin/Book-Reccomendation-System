@@ -1,3 +1,12 @@
+html {
+  height: 100%; /* Ensure the html element covers the full height */
+}
+
+body {
+  
+}
+
+
 .log-in {
     background-color: #ffffff;
     display: flex;
@@ -13,11 +22,12 @@
   }
   
   .log-in .overlap {
-    position: relative;
-    height: 1433px;
-    background-image: url(./images/Background.png);
-    background-size: cover;
-    background-position: 50% 50%;
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure the body covers the full height */
+    background-image: url(/assets/Background.png); 
+    background-size: cover; /* Cover the entire area */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Optional: Fix the background image */
   }
   
   .log-in .text-wrapper {
@@ -131,7 +141,7 @@
     height: 617px;
     top: 289px;
     left: 1003px;
-    background-image: url(./images/173f07b0-c534-4bcc-953a-df2d6f1d308e1.png);
+    background-image: url(/assets/login-signup-image.png);
     background-size: cover;
     background-position: 50% 50%;
   }
