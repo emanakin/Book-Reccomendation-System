@@ -1,0 +1,14 @@
+.bg {
+    width: 1728px;
+    height: 998px;
+    flex-shrink: 0;
+}
+
+.header {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}

@@ -1,0 +1,172 @@
+.log-in {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .log-in .overlap-wrapper {
+    background-color: #ffffff;
+    width: 1728px;
+    height: 1433px;
+  }
+  
+  .log-in .overlap {
+    position: relative;
+    height: 1433px;
+    background-image: url(./images/Background.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .log-in .text-wrapper {
+    position: absolute;
+    width: 475px;
+    top: 293px;
+    left: 175px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-in .username {
+    position: absolute;
+    width: 552px;
+    height: 101px;
+    top: 362px;
+    left: 175px;
+  }
+  
+  .log-in .rectangle {
+    position: absolute;
+    width: 550px;
+    height: 57px;
+    top: 44px;
+    left: 0;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .log-in .div {
+    position: absolute;
+    width: 219px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-in .password {
+    position: absolute;
+    width: 552px;
+    height: 101px;
+    top: 481px;
+    left: 175px;
+  }
+  
+  .log-in .text-wrapper-2 {
+    position: absolute;
+    width: 204px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-in .continue-button {
+    position: absolute;
+    width: 552px;
+    height: 47px;
+    top: 609px;
+    left: 175px;
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  .log-in .overlap-group {
+    position: relative;
+    width: 550px;
+    height: 47px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .log-in .text-wrapper-3 {
+    position: absolute;
+    top: 6px;
+    left: 216px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-in .divider {
+    position: absolute;
+    width: 5px;
+    height: 665px;
+    top: 260px;
+    left: 852px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .log-in .image {
+    position: absolute;
+    width: 550px;
+    height: 617px;
+    top: 289px;
+    left: 1003px;
+    background-image: url(./images/173f07b0-c534-4bcc-953a-df2d6f1d308e1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .log-in .rectangle-2 {
+    position: relative;
+    height: 608px;
+    top: 5px;
+    background-color: #b2b2b238;
+    border-radius: 15px;
+    filter: blur(20.7px);
+  }
+  
+  .log-in .text-wrapper-4 {
+    position: absolute;
+    top: 49px;
+    left: 175px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .log-in .p {
+    position: absolute;
+    width: 328px;
+    top: 63px;
+    left: 1241px;
+    font-family: "Poppins-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

@@ -1,0 +1,244 @@
+.sign-up {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sign-up .overlap-wrapper {
+    background-color: #ffffff;
+    width: 1728px;
+    height: 1433px;
+  }
+  
+  .sign-up .overlap {
+    position: relative;
+    height: 1433px;
+    background-image: url(./images/Background.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .sign-up .text-wrapper {
+    position: absolute;
+    width: 475px;
+    top: 235px;
+    left: 175px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .username {
+    position: absolute;
+    width: 552px;
+    height: 101px;
+    top: 304px;
+    left: 175px;
+  }
+  
+  .sign-up .rectangle {
+    position: absolute;
+    width: 550px;
+    height: 57px;
+    top: 44px;
+    left: 0;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .sign-up .div {
+    position: absolute;
+    width: 219px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .password {
+    position: absolute;
+    width: 552px;
+    height: 101px;
+    top: 423px;
+    left: 175px;
+  }
+  
+  .sign-up .text-wrapper-2 {
+    position: absolute;
+    width: 204px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .re-eneter-password {
+    position: absolute;
+    width: 552px;
+    height: 102px;
+    top: 542px;
+    left: 175px;
+  }
+  
+  .sign-up .rectangle-2 {
+    position: absolute;
+    width: 550px;
+    height: 57px;
+    top: 45px;
+    left: 0;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .sign-up .text-wrapper-3 {
+    position: absolute;
+    width: 258px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .location {
+    position: absolute;
+    width: 552px;
+    height: 102px;
+    top: 662px;
+    left: 175px;
+  }
+  
+  .sign-up .text-wrapper-4 {
+    position: absolute;
+    width: 179px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .age {
+    position: absolute;
+    width: 552px;
+    height: 102px;
+    top: 782px;
+    left: 175px;
+  }
+  
+  .sign-up .text-wrapper-5 {
+    position: absolute;
+    width: 85px;
+    top: 0;
+    left: 13px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .continue-button {
+    position: absolute;
+    width: 552px;
+    height: 47px;
+    top: 913px;
+    left: 175px;
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  .sign-up .overlap-group {
+    position: relative;
+    width: 550px;
+    height: 47px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .sign-up .text-wrapper-6 {
+    position: absolute;
+    top: 6px;
+    left: 216px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .divider {
+    position: absolute;
+    width: 5px;
+    height: 665px;
+    top: 260px;
+    left: 852px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .sign-up .image {
+    position: absolute;
+    width: 550px;
+    height: 617px;
+    top: 289px;
+    left: 1003px;
+    background-image: url(./images/173f07b0-c534-4bcc-953a-df2d6f1d308e1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .sign-up .img {
+    position: absolute;
+    width: 591px;
+    height: 649px;
+    top: -16px;
+    left: -21px;
+  }
+  
+  .sign-up .text-wrapper-7 {
+    position: absolute;
+    top: 49px;
+    left: 175px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-up .p {
+    position: absolute;
+    width: 328px;
+    top: 63px;
+    left: 1229px;
+    font-family: "Poppins-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
