@@ -1,0 +1,11 @@
+.nav-brand {
+    position: absolute;
+    top: 49px;
+    left: 175px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
