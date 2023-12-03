@@ -1,14 +1,24 @@
-.bg {
-    width: 1728px;
-    height: 998px;
-    flex-shrink: 0;
-}
-
-.header {
-    color: #000000;
+.fullscreen-img {
+    position: fixed; /* or absolute; depending on use case */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* This will cover the entire viewport without stretching the image */
+    z-index: -1; /* Ensures the image stays in the background */
+  }
+  
+  .main-text {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39);
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3.75rem;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-}
+    font-weight: 600;
+    line-height: 107.25%; /* 4.02188rem */
+  }
+
+  .sub-text {
+
+  }
