@@ -20,5 +20,11 @@
   }
 
   .sub-text {
-
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
