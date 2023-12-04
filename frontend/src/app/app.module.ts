@@ -12,6 +12,11 @@ import { MovieRateCarouselComponent } from './pages/builder-page/movie-rate-caro
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
 import { BuilderPageComponent } from './pages/builder-page/builder-page.component';
 import { ProgressBarComponent } from './pages/builder-page/progress-bar/progress-bar.component';
+import { NgxsModule } from '@ngxs/store';
+import { AuthState } from './states/auth.state';
+import { AuthorState } from './states/author.state';
+import { BookState } from './states/book.state';
+import { PublisherState } from './states/publisher.state';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,12 @@ import { ProgressBarComponent } from './pages/builder-page/progress-bar/progress
     ProgressBarComponent
   ],
   imports: [
+    NgxsModule.forRoot([
+      AuthorState,
+      AuthState,
+      BookState,
+      PublisherState
+    ]),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule

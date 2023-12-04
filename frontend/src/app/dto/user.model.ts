@@ -1,5 +1,3 @@
-import { JwtPayload } from "jwt-decode";
-
 export interface User {
   id: number,
   username?: string,
@@ -7,5 +5,4 @@ export interface User {
   location: string,
   age: number,
   user_details?: object
-  token?: JwtPayload; 
 }
