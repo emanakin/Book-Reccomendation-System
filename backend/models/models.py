@@ -38,7 +38,3 @@ class Rating(Base):
     user = relationship('User', back_populates='ratings')
     book = relationship('Book', back_populates='ratings')
 
-class UserBooks(Base):
-    __tablename__ = 'user_books'
-    user_id = Column(Integer, ForeignKey('users.id'), primary_key=True)
-    isbn = Column(String(12), ForeignKey('books.isbn'), primary_key=True)

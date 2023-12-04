@@ -7,7 +7,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <button class="btn btn-custom-login" type="button">Log in</button>
+            <button class="btn btn-custom-login" type="button" *ngIf="currentPage === 'landing'" routerLink="/login">Log in</button>
+            <div class="text" *ngIf="currentPage === 'signup'">Already have an account? <a class="text" routerLink="/login">Log in</a></div>
+            <div class="text" *ngIf="currentPage === 'login'">Dont have an account? <a class="text" routerLink="/signup">Sign up</a></div>
           </li>
         </ul>
       </div>

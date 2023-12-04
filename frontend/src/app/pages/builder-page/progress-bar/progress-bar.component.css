@@ -1,0 +1,5 @@
+.progress-bar-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 5rem; /* Height of the progress bar */
+}

@@ -36,28 +36,17 @@
 }
 
 .sign-up-button {
-  background: #000;
-  color: #FFF;
-  border: none;
-  padding: 10px 20px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 8px;
-  position: absolute;
-  top: 60%; /* Adjust if necessary to move the button down */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+  border-radius: 0.625rem;
+  background-color: #C0C0C0;
+  width: 22.5625rem;
+  height: 3.3125rem;
+  font-size: 1.5rem;
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+  cursor: pointer; /* Add pointer cursor on hover */
 }
-
-#log-in-button {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  transform: translate(0%, -50%);
-  z-index: 2;
+.sign-up-button:focus {
+  outline: none;
 }
 
 .button:hover {

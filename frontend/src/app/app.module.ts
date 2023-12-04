@@ -11,6 +11,7 @@ import { PublisherDropdownComponent } from './pages/builder-page/publisher-dropd
 import { MovieRateCarouselComponent } from './pages/builder-page/movie-rate-carousel/movie-rate-carousel.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
 import { BuilderPageComponent } from './pages/builder-page/builder-page.component';
+import { ProgressBarComponent } from './pages/builder-page/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BuilderPageComponent } from './pages/builder-page/builder-page.componen
     AuthorDropdownComponent,
     PublisherDropdownComponent,
     MovieRateCarouselComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
