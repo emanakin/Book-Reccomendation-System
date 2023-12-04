@@ -1,0 +1,28 @@
+.backdrop {
+    margin-top: 2rem;
+    width: 61.1875rem;
+    height: 39.5rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #D9D9D9;
+}
+
+.search-bar {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    background: #FFF;
+    width: 59.4375rem;
+    height: 4.875rem;
+    flex-shrink: 0;
+}
+
+.results-backdrop {
+    margin-top: 1rem;
+    width: 59.1875rem;
+    height: 31.6875rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #D9D9D9;
+    box-shadow: 0px 2px 3.8px 1px rgba(0, 0, 0, 0.25) inset;
+}

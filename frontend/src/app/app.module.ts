@@ -10,6 +10,7 @@ import { AuthorDropdownComponent } from './pages/builder-page/author-dropdown/au
 import { PublisherDropdownComponent } from './pages/builder-page/publisher-dropdown/publisher-dropdown.component';
 import { MovieRateCarouselComponent } from './pages/builder-page/movie-rate-carousel/movie-rate-carousel.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
+import { BuilderPageComponent } from './pages/builder-page/builder-page.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.c
     LandingPageComponent,
     SignupPageComponent,
     LoginPageComponent,
+    BuilderPageComponent,
     AuthorDropdownComponent,
     PublisherDropdownComponent,
     MovieRateCarouselComponent,

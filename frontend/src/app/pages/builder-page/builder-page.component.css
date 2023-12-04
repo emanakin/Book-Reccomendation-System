@@ -1,0 +1,9 @@
+.background-img{
+    position: fixed; /* or absolute; depending on use case */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* This will cover the entire viewport without stretching the image */
+    z-index: -1; /* Ensures the image stays in the background */
+}
