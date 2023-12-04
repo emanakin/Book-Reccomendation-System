@@ -1,28 +1,78 @@
 .backdrop {
     margin-top: 2rem;
-    width: 61.1875rem;
-    height: 39.5rem;
-    flex-shrink: 0;
+    max-width: 61.1875rem; /* Max width for responsiveness */
+    min-height: 39.5rem; /* Min height for responsiveness */
     border-radius: 1rem;
     background: #D9D9D9;
-}
-
-.search-bar {
+    padding: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
     margin-top: 1rem;
     border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.28);
     background: #FFF;
-    width: 59.4375rem;
+    width: 100%; /* Full width for responsiveness */
     height: 4.875rem;
-    flex-shrink: 0;
-}
-
-.results-backdrop {
+  }
+  
+  .results-backdrop {
     margin-top: 1rem;
-    width: 59.1875rem;
-    height: 31.6875rem;
-    flex-shrink: 0;
+    max-width: 59.1875rem; /* Max width for responsiveness */
+    min-height: 31.6875rem; /* Min height or vh for responsiveness */
     border-radius: 1rem;
     background: #D9D9D9;
     box-shadow: 0px 2px 3.8px 1px rgba(0, 0, 0, 0.25) inset;
-}
+    overflow-y: auto; 
+  }
+  
+  /* Progress bar styles */
+  .progress {
+    background-color: #555;
+    border-radius: 10px;
+    height: 20px; 
+  }
+  
+  .progress-bar {
+    background-color: white;
+    width: 50%; 
+  }
+  
+  /* Author button styles */
+  .btn-author {
+    background-color: #777;
+    color: white;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #222;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 4.875rem; 
+  }
+  
+  /* Text styles */
+  h1, h2 {
+    color: white; /* Changed for better contrast on dark background */
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 991.98px) {
+    .backdrop,
+    .results-backdrop {
+      width: 90%; /* Slight margin on smaller screens */
+      margin-top: 1rem;
+      border-radius: 0.5rem; /* Smaller radius on smaller screens */
+    }
+  
+    .search-bar,
+    .btn-author,
+    .btn-primary {
+      width: 90%; /* Adjust button width on smaller screens */
+    }
+  }
+  
