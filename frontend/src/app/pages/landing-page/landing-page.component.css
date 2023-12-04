@@ -1,31 +1,67 @@
-
 .fullscreen-img {
-    position: fixed; /* or absolute; depending on use case */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* This will cover the entire viewport without stretching the image */
-    z-index: -1; /* Ensures the image stays in the background */
-  }
-  
-  .main-text {
-    color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39);
-    font-family: Poppins;
-    font-size: 3.75rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 107.25%; /* 4.02188rem */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
 
-  .sub-text {
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+.main-text {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39);
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.75rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%;
+  transform: translate(-50%, -100%); /* Adjust both the X and Y axis */
+  z-index: 2;
+}
+
+.sub-text {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  position: absolute;
+  top: 50%; /* Place just below the main text */
+  left: 50%;
+  transform: translate(-50%, 10%);
+  z-index: 2;
+}
+
+.sign-up-button {
+  background: #000;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+  position: absolute;
+  top: 60%; /* Adjust if necessary to move the button down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#log-in-button {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translate(0%, -50%);
+  z-index: 2;
+}
+
+.button:hover {
+  background-color: #555;
+  color: white;
+}
+
