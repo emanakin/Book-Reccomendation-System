@@ -1,4 +1,4 @@
-import { User } from "../dto/user.model";
+import { SignUpPayload } from "../dto/auth.model";
 
 export class Login {
     static readonly type = '[Auth] Login';
@@ -7,7 +7,7 @@ export class Login {
 
 export class Signup {
     static readonly type = '[Auth] Signup';
-    constructor(public payload: User) {}
+    constructor(public payload: SignUpPayload) {}
 }
 
 export class Logout {

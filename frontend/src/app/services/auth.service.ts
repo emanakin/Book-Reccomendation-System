@@ -4,7 +4,7 @@ import { catchError, tap, throwError } from "rxjs";
 import { Router } from '@angular/router';
 import { User } from "../dto/user.model";
 import * as jwt_decode from 'jwt-decode';
-import { AuthResponse, AuthToken } from "../dto/auth.model";
+import { AuthResponse, AuthToken, SignUpPayload } from "../dto/auth.model";
 
 const apiEndpoint = "http://127.0.0.1:5000/";
 
@@ -13,7 +13,7 @@ export class AuthService {
     
     constructor(private http: HttpClient, private router: Router) {}
 
-    signup(user: User) {
+    signup(user: SignUpPayload) {
         return this.http.post<AuthResponse>(
             apiEndpoint+'signup', { user })
         .pipe(  

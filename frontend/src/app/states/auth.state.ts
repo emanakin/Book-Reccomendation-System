@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { AuthStateModel, AuthToken } from "../dto/auth.model";
 import { Login, Logout, Signup } from "../actions/auth.action";
-import { Token } from '@angular/compiler';
 import { User } from '../dto/user.model';
 
 @State<AuthStateModel>({

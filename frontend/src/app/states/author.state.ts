@@ -1,14 +1,9 @@
-// author.state.ts
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { AuthorService } from '../services/author.service';
 import { tap } from 'rxjs/operators';
 import { FetchAuthors, SendPreferredAuthors } from '../actions/author.actions';
-import { Author } from '../dto/author.model';
-
-export interface AuthorStateModel {
-  authors: Author[];
-  preferredAuthors: Author[];
-}
+import { Author, AuthorStateModel } from '../dto/author.model';
+import { Injectable } from '@angular/core';
 
 @State<AuthorStateModel>({
   name: 'authors',
@@ -16,6 +11,10 @@ export interface AuthorStateModel {
     authors: [],
     preferredAuthors: []
   }
+})
+
+@Injectable({
+  providedIn: 'root'
 })
 export class AuthorState {
   constructor(private authorService: AuthorService) {}

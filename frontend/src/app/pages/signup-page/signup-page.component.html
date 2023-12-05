@@ -4,20 +4,22 @@
 <div class="container mt-5">
   <div class="row mx-auto text-center">
     <div class="col">
-      <h2 class="title">Create An Account</h2>
-      <h3>Username</h3>
-      <input type="text">
-      <h3>Password</h3>
-      <input type="text">
-      <h3>Re-enter Password</h3>
-      <input type="text">
-      <h3>Location</h3>
-      <input type="text">
-      <h3>Age</h3>
-      <input type="text">
-      <br>
-      <br>
-      <button routerLink="/builder">Continue</button>
+      <form [formGroup]="signupForm" (ngSubmit)="submitSignup()"> 
+        <h2 class="title">Create An Account</h2>
+        <h3>Username</h3>
+        <input type="text">
+        <h3>Password</h3>
+        <input type="text">
+        <h3>Re-enter Password</h3>
+        <input type="text">
+        <h3>Location</h3>
+        <input type="text">
+        <h3>Age</h3>
+        <input type="text">
+        <br>
+        <br>
+        <button type="submit" routerLink="/builder">Continue</button>
+      </form>
     </div>
     <div class="col">
       <img class="divider" src="img/divider.png"/>
@@ -26,5 +28,6 @@
       <img class="rectangle" src="https://s3-alpha-sig.figma.com/img/f179/1064/cebddf1be9beeca8e6ed4bf9d40366bf?Expires=1702252800&Signature=LssQeENtWWf5c3E1lWa~X3ThMM5VYMFsSYWv2IGdi0K-JOrRpOjZZ1jy4dACh7TMhj0bF3wSt~2mWJUs3~~yMBxBVhGjM4q3hco8kbrIudrb4AH5ldcUNzA-A23u-HH0qcbiMoUfrbd4rIyUJrRMrAMCCpgXhzFueA1l58HLoGg6qyVzs6tLoD4kZ~TxyR1TlKpLx215rw2MsEDy-JtLm7cUzllUdOyyC4VXcaziTlgjjPmYatWlE4SCOgSGOZkILMseWm7nQMrHJFk6RVLG4v0i~xWP5nuro1d809CHnSCzoprdatUL5HHpEnbA7vas5hVKuKyjwdL~ICz3HtbVOw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/>
     </div>
   </div>
+  
 </div>
 

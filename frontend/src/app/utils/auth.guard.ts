@@ -3,7 +3,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service'; 
 import * as jwt_decode from 'jwt-decode';
-import { AuthToken } from '../dto/authToken.model'; 
+import { AuthToken } from '../dto/auth.model'; 
 
 @Injectable({
   providedIn: 'root'

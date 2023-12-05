@@ -17,6 +17,7 @@ import { AuthState } from './states/auth.state';
 import { AuthorState } from './states/author.state';
 import { BookState } from './states/book.state';
 import { PublisherState } from './states/publisher.state';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PublisherState } from './states/publisher.state';
     ]),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

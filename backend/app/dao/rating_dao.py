@@ -1,5 +1,5 @@
 from models import Rating
-from models.base import Base
+from models import Base
 from sqlalchemy.orm import Session
 
 class RatingDAO:

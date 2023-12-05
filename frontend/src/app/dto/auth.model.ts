@@ -15,3 +15,10 @@ export interface AuthToken {
     iat: number;
     userId: string;
 }
+
+export interface SignUpPayload {
+    username: string; 
+    password: string, 
+    location: string, 
+    age: number
+}

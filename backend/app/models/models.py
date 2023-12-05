@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects.postgresql import JSON
+from sqlalchemy.ext.mutable import MutableDict
 
 Base = declarative_base()
 
@@ -18,7 +19,7 @@ class User(Base):
     password = Column(String(256))
     location = Column(String(256))
     age = Column(Integer)
-    user_details = Column(JSON)
+    user_details = Column(MutableDict.as_mutable(JSON))
 
     # Relationships
     ratings = relationship('Rating', back_populates='user')
