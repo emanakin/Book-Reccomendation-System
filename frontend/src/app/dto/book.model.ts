@@ -14,3 +14,9 @@ export interface Book {
     publisher: string,
     img: string
 }
+
+export interface Rating {
+    userId: string,
+    isbn: string,
+    rating: number
+}

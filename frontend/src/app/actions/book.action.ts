@@ -1,10 +1,12 @@
+import { Rating } from "../dto/book.model";
+
 export class FetchSampleBooks {
     static readonly type = '[Book] Fetch Sample Books';
   }
   
   export class SendBaseRatingSample {
     static readonly type = '[Book] Send Base Rating Sample';
-    constructor(public ratings: number[]) {}
+    constructor(public ratings: Rating[]) {}
   }
   
   export class FetchUserRatedBooks {
