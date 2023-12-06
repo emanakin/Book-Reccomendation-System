@@ -13,4 +13,7 @@ class BookService:
     
     def get_sample_books(self, user_id, page):
         return self.book_dao.fetch_sample_books(g.session, user_id, page)
+    
+    def get_list_of_books(self, list_of_ids):
+        return self.book_dao.bulk_fetch_books(g.session, list_of_ids)
 

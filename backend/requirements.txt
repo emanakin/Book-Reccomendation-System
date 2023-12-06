@@ -4,3 +4,6 @@ sqlalchemy
 alembic
 pandas
 PyJWT
+scikit-learn 
+numpy
+scipy

@@ -67,3 +67,51 @@ class UserDAO:
 
         rated_books = rated_books_query.offset(offset).limit(10).all()
         return rated_books
+
+    def get_all_user_ratings(self, session):
+        ratings_query = session.query(Rating).all()
+
+        ratings_data = [{
+            'user_id': rating.user_id,
+            'book_id': rating.book_isbn,  
+            'rating': rating.book_rating
+        } for rating in ratings_query]
+
+        return ratings_data
+    
+    def get_all_user_ratings(self, session):
+        ratings_query = session.query(Rating).all()
+
+        ratings_data = [{
+            'user_id': rating.user_id,
+            'book_id': rating.book_isbn,  
+            'rating': rating.book_rating
+        } for rating in ratings_query]
+
+        return ratings_data
+    
+    def get_user_ratings(self, session, user_id):
+        user_ratings_query = session.query(Rating).filter(Rating.user_id == user_id).all()
+
+        user_ratings_data = [{
+            'user_id': rating.user_id,
+            'book_id': rating.book_isbn,  
+            'rating': rating.book_rating
+        } for rating in user_ratings_query]
+
+        return user_ratings_data
+    
+    def get_user_preferences(self, session, user_id):
+        user = session.query(User).filter(User.id == user_id).first()
+        if user:
+            preferences = {
+                'preferred_authors': user.user_details.get('preferred_authors', []),
+                'preferred_publishers': user.user_details.get('preferred_publishers', [])
+            }
+            return preferences
+        return {}
+
+    def get_user_rated_books(self, session, user_id):
+        ratings = session.query(Rating).filter(Rating.user_id == user_id).all()
+        rated_books_isbns = [rating.book_isbn for rating in ratings]
+        return rated_books_isbns
