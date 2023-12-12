@@ -15,4 +15,4 @@ class RatingDAO:
         self.session.commit()
         return rating
 
-    # Add other necessary methods for rating operations
+    

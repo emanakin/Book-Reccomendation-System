@@ -26,3 +26,11 @@
     background: #D9D9D9;
     box-shadow: 0px 2px 3.8px 1px rgba(0, 0, 0, 0.25) inset;
 }
+.card {
+    width: 908px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    background: #BABABA;
+}

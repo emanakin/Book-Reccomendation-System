@@ -12,7 +12,7 @@ export class BookService {
   }
 
   sendBaseRatingSample(ratings: Rating[]): Observable<any> {
-    return this.http.post('/api/user/books/rating', { ratings });
+    return this.http.post('/api/user/books/rate', { ratings });
   }
 
   getUserRatedBooks(): Observable<Book[]> {

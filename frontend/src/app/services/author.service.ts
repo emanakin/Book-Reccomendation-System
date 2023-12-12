@@ -1,4 +1,3 @@
-// author.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -9,7 +8,7 @@ export class AuthorService {
   constructor(private http: HttpClient) {}
 
   getAuthors(): Observable<Author[]> {
-    return this.http.get<Author[]>('/api/authors');
+    return this.http.get<Author[]>('/api/books/authors');
   }
 
   sendPreferredAuthors(preferredAuthors: Author[]): Observable<any> {

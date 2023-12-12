@@ -6,7 +6,7 @@ export class PublisherService {
   constructor(private http: HttpClient) {}
 
   getPublishers() {
-    return this.http.get<string[]>('/api/publishers');
+    return this.http.get<string[]>('/api/books/publishers');
   }
 
   sendPreferredPublishers(preferredPublishers: string[]) {
